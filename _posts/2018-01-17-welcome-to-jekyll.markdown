@@ -7,7 +7,7 @@ categories: jekyll update
 A programmed has learned how learned how to play tic-tac-toe using 'Machine Learning'. 
 
 
-
+<html>
 	<body>
 		<table width="400" cellpadding="10" cellspacing="5">
 			<tr>
@@ -30,6 +30,7 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 			</tr>
 		</table>
 	</body>
+</html>
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
