@@ -7,7 +7,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   
   {% if post && post.css %}
-  <link rel='stylesheet' type='text/css' href='{{ post.css }}' />
+  <link rel='stylesheet' type='text/css' href='{{ page.css }}' />
 {% endif %}
   
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
