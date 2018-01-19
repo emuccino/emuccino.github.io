@@ -4,12 +4,23 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+My name is Eric Muccino, and I am a 22 year old studying 'Data Science'. I graduated from the University of Maryland in 2017 with a degree in Physics.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+This blog is an attempt to document some of my progress while I teach myself computer programming and data science. Some of the langauges I've been studying include:
+<ul>
+    <li>
+      Python
+    </li>
+    <li>
+      HTML
+    </li>
+    <li>
+      CSS
+    </li>
+    <li>
+      JavaScript
+    </li>
+    <li>
+      SQLite
+    </li>
+</ul>
