@@ -3,7 +3,6 @@ layout: post
 title:  "Tic-Tac-Toe: Try to Win!"
 date:   2018-01-17 02:40:08 +0000
 categories: jekyll update
-css: /css/post1.css
 ---
 A programmed has learned how learned how to play tic-tac-toe using 'Machine Learning'. 
 
@@ -34,7 +33,7 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 </html>
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-Nope
+
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
