@@ -3,7 +3,7 @@ layout: post
 title:  "Tic-Tac-Toe: Try to Win!"
 date:   2018-01-17 02:40:08 +0000
 categories: jekyll update
-css: https://emuccino.github.io/css/post1.scss
+css: /css/post1.css
 ---
 A programmed has learned how learned how to play tic-tac-toe using 'Machine Learning'. 
 
