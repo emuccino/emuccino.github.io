@@ -27,7 +27,7 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 				</tr>
 			</table>
 		</div>
-		<script src="./js/post1_js.js"></script>
+		<script src="../js/post1_js.js"></script>
 	</body>
 </html>
 
