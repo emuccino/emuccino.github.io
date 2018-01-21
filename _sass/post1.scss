@@ -8,12 +8,16 @@
 	font-family: sans-serif;
 }
 
-.post1 .x.hidden {
-	visibility: hidden;
+.post1 .x.none {
+	display: none;
 }
 
-.visible {
-	visibility: visible;
+.post1 .o.none {
+	display: none;
+}
+
+.post1 .x.hidden {
+	visibility: hidden;
 }
 
 .post1 td:hover {
