@@ -31,4 +31,4 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 	</body>
 </html>
 
-It's a work in progress....
+It's a work in progress.... so far so good.
