@@ -8,25 +8,25 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 
 <html>
 	<body>
-		<div class="post1">
-			<table>
-				<tr>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-				</tr>
-				<tr>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-				</tr>
-				<tr>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-					<td><div class="x hidden">X</div></td>
-				</tr>
-			</table>
-		</div>
+			<div class="post1">
+				<table>
+					<tr>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+					</tr>
+					<tr>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+					</tr>
+					<tr>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+						<td><div class="x hidden">X</div></td>
+					</tr>
+				</table>
+			</div>
 		<script src="../js/post1_js.js"></script>
 	</body>
 </html>
