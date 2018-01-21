@@ -3,7 +3,8 @@ layout: post
 title:  "Tic-Tac-Toe: Try to Win!"
 date:   2018-01-17 02:40:08 +0000
 categories: machine learning, game
-jsarr: - js/post1_js.js
+jsarr:
+- js/post1_js.js
 ---
 A program has learned how to play tic-tac-toe using 'Machine Learning'. 
 
