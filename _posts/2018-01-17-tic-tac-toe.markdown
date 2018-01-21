@@ -11,18 +11,18 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 		<div class="post1">
 			<table>
 				<tr>
-					<td>O</td>
 					<td>X</td>
-					<td>O</td>
-				</tr>
-				<tr>
 					<td>X</td>
-					<td>O</td>
 					<td>X</td>
 				</tr>
 				<tr>
 					<td>X</td>
-					<td>O</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<td>X</td>
+					<td>X</td>
 					<td>X</td>
 				</tr>
 			</table>
