@@ -8,13 +8,18 @@
 	font-family: sans-serif;
 }
 
-.post1 .x {
+.post1 .x.hidden {
 	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
 }
 
 .post1 td:hover {
 	background-color: #f5f5f5;
-	 .x {
-	visibility: visible;
 }
+
+.post1 td:hover .x {
+	visibility: visible;
 }
