@@ -11,7 +11,7 @@ A programmed has learned how learned how to play tic-tac-toe using 'Machine Lear
 		<div class="post1">
 			<table>
 				<tr>
-					<td>X</td>
+					<td><div class="x">X</div></td>
 					<td>X</td>
 					<td>X</td>
 				</tr>
