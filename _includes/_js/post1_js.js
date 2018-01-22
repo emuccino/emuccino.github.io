@@ -1,4 +1,5 @@
 $(document).ready(function() { $('div.x').click(function() {
+if (!$('#win').hasClass('true')) {
     $(this).removeClass("hidden");
 
     let board = [
@@ -44,12 +45,12 @@ $(document).ready(function() { $('div.x').click(function() {
 
 	if (winner === 'X') {
 		$("#xwin").removeClass("hidden");
-		$("#win").addClass("tue");	
+		$("#win").addClass("true");	
 		$(".x.hidden").addclass("none");
 		
 	}
 
-	if (!$("#win").hasClass("tue"))	{
+	if (!$("#win").hasClass("true")) {
 		if ($(`div.x.${5}`).hasClass("hidden") && $(`div.o.${5}`).hasClass("none")) {
 			console.log(true);
 			$(`div.o.${5}`).removeClass("none");
@@ -124,10 +125,10 @@ $(document).ready(function() { $('div.x').click(function() {
 
 		if (winner === 'O') {
 			$("#owin").removeClass("hidden");
-			$("#win").addClass("tue");
+			$("#win").addClass("true");
 			$(".x.hidden").addclass("none");
 		}
 	}
 
-	});
+}});
 });
