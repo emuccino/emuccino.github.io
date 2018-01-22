@@ -9,8 +9,8 @@ jsarr:
 A program has learned how to play tic-tac-toe using 'Machine Learning'. 
 
 <html>
-	<body>
-		<div class="post1">
+	<body class="post1">
+		<div>
 			<table>
 				<tr>
 					<td><div class="x hidden 1">X</div><div class="o none 1">O</div></td>
@@ -29,6 +29,9 @@ A program has learned how to play tic-tac-toe using 'Machine Learning'.
 				</tr>
 			</table>
 		</div>
+		<div class="hidden"  id="xwin">You Win!</div>
+		<div class="hidden" id="owin">You Lose!</div>
+		<div id="win"></div>
 	</body>
 </html>
 
