@@ -44,7 +44,6 @@ A program has learned how to play tic-tac-toe using 'Machine Learning'.
                 <!-- div.ingame displays in-game messages and controls -->
                 <div class = 'ingame' id="human">It's your turn ...</div>
                 <div class = 'ingame' id="ai">
-                    <img src = "imgs/robot.png" id = "robot" class = "robot" />
                     <p>Waint for it ...</p>
                 </div>
                 <div class = 'ingame' id="won">You won !</div>
