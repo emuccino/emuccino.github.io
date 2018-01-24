@@ -10,7 +10,6 @@ jsarr:
 - _js/ai.js
 - _js/control.js
 ---
-A program has learned how to play tic-tac-toe using 'Machine Learning'. 
 
 <html>
     <body>
