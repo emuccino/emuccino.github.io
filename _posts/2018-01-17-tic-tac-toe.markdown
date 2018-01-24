@@ -14,6 +14,7 @@ A program has learned how to play tic-tac-toe using 'Machine Learning'.
 
 <html>
     <body>
+    <p style="text-align: center">A program has learned how to play tic-tac-toe using 'Machine Learning'.</p>
         <div class = 'main-container'>
             <div class = 'board'>
                 <!-- data-indx following cell divs represents cell index in 1D array representation -->
