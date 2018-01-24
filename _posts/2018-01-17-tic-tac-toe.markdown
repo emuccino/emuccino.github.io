@@ -6,10 +6,10 @@ categories: machine learning, game
 jsarr:
 - _js/post1_js.js
 - _js/jquery-1.10.1.min.js
-- js/ui.js
-- js/game.js
-- js/ai.js
-- js/control.js
+- _js/ui.js
+- _js/game.js
+- _js/ai.js
+- _js/control.js
 ---
 A program has learned how to play tic-tac-toe using 'Machine Learning'. 
 
