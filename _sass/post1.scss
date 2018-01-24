@@ -18,6 +18,12 @@
 	text-align: center;
 	font-size: 84px;
 	font-family: sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor:pointer;
+    float:left;
+    line-height: 140px;
 }
 
 .control {
