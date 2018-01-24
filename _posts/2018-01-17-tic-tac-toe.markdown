@@ -5,6 +5,11 @@ date:   2018-01-17 02:40:08 +0000
 categories: machine learning, game
 jsarr:
 - _js/post1_js.js
+- _js/jquery-1.10.1.min.js
+- js/ui.js
+- js/game.js
+- js/ai.js
+- js/control.js
 ---
 A program has learned how to play tic-tac-toe using 'Machine Learning'. 
 
@@ -47,12 +52,6 @@ A program has learned how to play tic-tac-toe using 'Machine Learning'.
                 <div class = 'ingame' id="draw">It's a Draw</div>
             </div>
         </div>
-
-        <script src = "scripts/jquery-1.10.1.min.js"></script>
-        <script src = "scripts/ui.js"></script>
-        <script src = "scripts/game.js"></script>
-        <script src = "scripts/ai.js"></script>
-        <script src = "scripts/control.js"></script>
     </body>
 </html>
 
