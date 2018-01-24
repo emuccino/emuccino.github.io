@@ -4,7 +4,6 @@ title:  "Tic-Tac-Toe: Try to Win!"
 date:   2018-01-17 02:40:08 +0000
 categories: machine learning, game
 jsarr:
-- _js/post1_js.js
 - _js/jquery-1.10.1.min.js
 - _js/ui.js
 - _js/game.js
