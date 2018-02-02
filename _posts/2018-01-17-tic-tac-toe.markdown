@@ -15,7 +15,7 @@ jsarr:
     <body>
     <p style="text-align: center">A program has learned how to play tic-tac-toe using 'Machine Learning'.</p>
     <p>Chose a difficulty setting and click "Start" to begin.</p>
-        <div class = 'main-container'>
+        <div class = 'game'>
             <div class = 'board'>
                 <div class='cell' data-indx = "0" ></div>
                 <div class='cell' data-indx = "1" ></div>
@@ -29,7 +29,7 @@ jsarr:
             </div>
 
             <div class = 'control'>
-                <div class = 'intial'>
+                <div class = 'initial'>
                     <div class = 'difficulty'>
                         <span class = 'level not-selected' id = "blind">Easy</span>
                         <span class = 'level not-selected' id = "novice">Medium</span>
