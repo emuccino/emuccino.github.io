@@ -29,7 +29,7 @@ jsarr:
             </div>
 
             <div class = 'control'>
-                <div class = 'initial'>
+                <div class = 'intial'>
                     <div class = 'difficulty'>
                         <span class = 'level not-selected' id = "blind">Easy</span>
                         <span class = 'level not-selected' id = "novice">Medium</span>
