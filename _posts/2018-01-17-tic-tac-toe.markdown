@@ -14,9 +14,9 @@ jsarr:
 <html>
     <body>
     <p style="text-align: center">A program has learned how to play tic-tac-toe using 'Machine Learning'.</p>
+    <p>Chose a difficulty setting and click "Start" to begin.</p>
         <div class = 'main-container'>
             <div class = 'board'>
-                <!-- data-indx following cell divs represents cell index in 1D array representation -->
                 <div class='cell' data-indx = "0" ></div>
                 <div class='cell' data-indx = "1" ></div>
                 <div class='cell' data-indx = "2" ></div>
@@ -29,12 +29,11 @@ jsarr:
             </div>
 
             <div class = 'control'>
-                <!-- div.intial displays the starting controls -->
                 <div class = 'intial'>
                     <div class = 'difficulty'>
-                        <span class = 'level not-selected' id = "blind">Blind</span>
-                        <span class = 'level not-selected' id = "novice">Novice</span>
-                        <span class = 'level not-selected' id = "master">Master!</span>
+                        <span class = 'level not-selected' id = "blind">Easy</span>
+                        <span class = 'level not-selected' id = "novice">Medium</span>
+                        <span class = 'level not-selected' id = "master">Hard</span>
                     </div>
 
                     <div class='start'> Start </div>
@@ -52,5 +51,3 @@ jsarr:
         </div>
     </body>
 </html>
-
-It's a work in progress.... so far so good
