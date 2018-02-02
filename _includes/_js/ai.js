@@ -244,9 +244,9 @@ var AI = function(level) {
     this.notify = function(turn) {
         switch(levelOfIntelligence) {
             //invoke the desired behavior based on the level chosen
-            case "blind": takeABlindMove(turn); break;
-            case "novice": takeANoviceMove(turn); break;
-            case "master": takeAMasterMove(turn); break;
+            case "easy": takeABlindMove(turn); break;
+            case "medium": takeANoviceMove(turn); break;
+            case "hard": takeAMasterMove(turn); break;
         }
     };
 };
