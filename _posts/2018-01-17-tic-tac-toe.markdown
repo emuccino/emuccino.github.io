@@ -31,19 +31,15 @@ jsarr:
             <div class = 'control'>
                 <div class = 'intial'>
                     <div class = 'difficulty'>
-                        <span class = 'level not-selected' id = "blind">Easy</span>
-                        <span class = 'level not-selected' id = "novice">Medium</span>
-                        <span class = 'level not-selected' id = "master">Hard</span>
+                        <span class = 'level not-selected' id = "easy">Easy</span>
+                        <span class = 'level not-selected' id = "medium">Medium</span>
+                        <span class = 'level not-selected' id = "hard">Hard</span>
                     </div>
 
                     <div class='start'> Start </div>
                 </div>
 
-                <!-- div.ingame displays in-game messages and controls -->
                 <div class = 'ingame' id="human">It's your turn ...</div>
-                <div class = 'ingame' id="ai">
-                    <p>Waint for it ...</p>
-                </div>
                 <div class = 'ingame' id="won">You won !</div>
                 <div class = 'ingame' id="lost">You lost !</div>
                 <div class = 'ingame' id="draw">It's a Draw</div>
