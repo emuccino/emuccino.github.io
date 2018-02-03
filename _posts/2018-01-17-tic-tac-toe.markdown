@@ -13,8 +13,8 @@ jsarr:
 
 <html>
     <body>
-    <p style="text-align: center">A program has learned how to play tic-tac-toe using 'Machine Learning'.</p>
-    <p>Chose a difficulty setting and click "Start" to begin.</p>
+    <p style="text-align: center">A program plays tic-tac-toe using Machine Learning method called Minimax. This type of decision tree evaluates a score for every possible game outcome and makes a decision that has the greatest avaerage score. The "Hard" difficulty setting fully utilizes the Minimax function, while the "Easy" difficulty setting will make a ranodm move. The "Medium" difficulty setting alternates between making "Hard" and "Easy" with a 60-40 probability each turn.</p>
+    <p style="text-align: center">Chose a difficulty setting and click "Start" to begin.</p>
         <div class = 'game'>
             <div class = 'board'>
                 <div class='cell' data-indx = "0" ></div>
