@@ -1,19 +1,6 @@
 /*Global object contains all functions*/
 var globals = {};
 
-$(".reset").click(function() {
-    $(".cell").html('');
-    $(".cell").removeClass('occupied');
-    ui.intialControlsVisible = true;
-    ui.currentView = "";
-    $('.intial').fadeIn({
-        duration : "slow"
-    };
-    $(".level").addClass('not-selected');
-    $(".level").removeClass('selected');
-    $(".reset").css("display", "none");
-});
-
 /*Chose difficulty setting*/
 $(".level").each(function() {
      $(this).click(function() {
@@ -58,3 +45,16 @@ $(".start").click(function() {
          }
      })
  });
+
+$(".reset").click(function() {
+    $(".cell").html('');
+    $(".cell").removeClass('occupied');
+    ui.intialControlsVisible = true;
+    ui.currentView = "";
+    $('.intial').fadeIn({
+        duration : "slow"
+    };
+    $(".level").addClass('not-selected');
+    $(".level").removeClass('selected');
+    $(".reset").css("display", "none");
+});
