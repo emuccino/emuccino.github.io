@@ -43,6 +43,7 @@ jsarr:
                 <div class = 'ingame' id="won">You won !</div>
                 <div class = 'ingame' id="lost">You lost !</div>
                 <div class = 'ingame' id="draw">It's a Draw</div>
+                <div class='reset'> Reset </div>
             </div>
         </div>
     </body>
