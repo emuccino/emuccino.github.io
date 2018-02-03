@@ -53,7 +53,7 @@ $(".reset").click(function() {
     ui.currentView = "";
     $('.intial').fadeIn({
         duration : "slow"
-    };
+    });
     $(".level").addClass('not-selected');
     $(".level").removeClass('selected');
     $(".reset").css("display", "none");
