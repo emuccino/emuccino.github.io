@@ -103,6 +103,7 @@ var Game = function(AILevel) {
             else {
                 ui.switchViewTo("draw");
               }
+            $(".reset").css("display", "inline");
         }
         else {
             if(this.currentState.turn === "X") {
