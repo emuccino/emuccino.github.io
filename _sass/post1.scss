@@ -69,6 +69,28 @@
     opacity:1;
 }
 
+.reset {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+    opacity:0.5;
+    display: none;
+}
+
+.reset:hover {
+    opacity:1;
+}
+
 .ingame {
     display:none;
     color: black;
