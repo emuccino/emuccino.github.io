@@ -11,6 +11,7 @@ $(".reset").click(function() {
     };
     $(".level").addClass('not-selected');
     $(".level").removeClass('selected');
+    $(".reset").css("display", "none");
 });
 
 /*Chose difficulty setting*/
@@ -31,7 +32,9 @@ $(".start").click(function() {
     if(typeof selectedDiffeculty !== "undefined") {
         var aiPlayer = new AI(selectedDiffeculty);
         globals.game = new Game(aiPlayer);
+
         aiPlayer.plays(globals.game);
+
         globals.game.start();
     }
 });
@@ -42,10 +45,14 @@ $(".start").click(function() {
      $this.click(function() {
          if(globals.game.status === "running" && globals.game.currentState.turn === "X" && !$this.hasClass('occupied')) {
              var indx = parseInt($this.data("indx"));
+
              var next = new State(globals.game.currentState);
              next.board[indx] = "X";
+
              ui.insertAt(indx, "X");
+
              next.advanceTurn();
+
              globals.game.advanceTo(next);
 
          }
