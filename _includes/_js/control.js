@@ -46,6 +46,7 @@ $(".start").click(function() {
      })
  });
 
+/*Reset button*/
 $(".reset").click(function() {
     $(".cell").html('');
     $(".cell").removeClass('occupied');
@@ -57,4 +58,5 @@ $(".reset").click(function() {
     $(".level").addClass('not-selected');
     $(".level").removeClass('selected');
     $(".reset").css("display", "none");
+    $(".ingame").css("display", "none");
 });
