@@ -793,6 +793,7 @@ categories: machine learning, game
         <div class='cell' data-indx = "781" ></div>
         <div class='cell' data-indx = "782" ></div>
         <div class='cell' data-indx = "783" ></div>
+        <div class='cell' data-indx = "784" ></div>
     </div>
 </body>
 </html>
