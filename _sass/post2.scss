@@ -1,24 +1,23 @@
 .post2 {
     .board {
-        height: 1400px;
-        width: 1400px;
+        height: 840px;
+        width: 840px;
         margin: 0 auto;
     }
 
     .cell {
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
+        width: 30px;
+        height: 30px;
         background-color: #dddddd;
         text-align: center;
-        font-size: 34px;
+        font-size: 24px;
         font-family: sans-serif;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         cursor:pointer;
         float:left;
-        line-height: 45px;
+        line-height: 25px;
     }
 
  }
