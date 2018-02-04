@@ -1,31 +1,23 @@
 .post2 {
     .board {
-        height: 2800px;
-        width: 2800px;
+        height: 2100px;
+        width: 2100px;
         margin: 0 auto;
     }
 
     .cell {
-        width: 100px;
-        height: 100px;
+        width: 75px;
+        height: 75px;
         border: 1px solid black;
         background-color: #dddddd;
         text-align: center;
-        font-size: 84px;
+        font-size: 20px;
         font-family: sans-serif;
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         cursor:pointer;
         float:left;
-        line-height: 90px;
-
-    .not-selected {
-        opacity: 0.5;
-    }
-
-    .not-selected:hover {
-        opacity:1;
     }
 
  }
