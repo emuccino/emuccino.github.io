@@ -11,8 +11,8 @@ jsarr:
 <body class = 'post2'>
     <p>This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!</p>
     <div class = 'post2 board'>
-        <div class='cell' data-indx = "0" >X</div>
-        <div class='cell' data-indx = "1" >X</div>
+        <div class='cell' data-indx = "0" ></div>
+        <div class='cell' data-indx = "1" ></div>
         <div class='cell' data-indx = "2" ></div>
         <div class='cell' data-indx = "3" ></div>
         <div class='cell' data-indx = "4" ></div>
