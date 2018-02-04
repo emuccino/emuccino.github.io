@@ -6,8 +6,9 @@ categories: machine learning, game
 
 ---
 
-This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!
 <html>
+<body class = 'post2'>
+    <p>This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!</p>
     <div class = 'post2 board'>
         <div class='cell' data-indx = "0" >X</div>
         <div class='cell' data-indx = "1" ></div>
@@ -793,4 +794,5 @@ This post is a work in progress. Check out my interactive tic-tac-toe game in my
         <div class='cell' data-indx = "782" ></div>
         <div class='cell' data-indx = "783" ></div>
     </div>
+</body>
 </html>
