@@ -10,7 +10,7 @@ This post is a work in progress. Check out my interactive tic-tac-toe game in my
 <html>
     <body class = 'post2'>
         <div class = 'board'>
-            <div class='cell' data-indx = "0" ></div>
+            <div class='cell' data-indx = "0" >X</div>
             <div class='cell' data-indx = "1" ></div>
             <div class='cell' data-indx = "2" ></div>
             <div class='cell' data-indx = "3" ></div>
