@@ -27,7 +27,6 @@ $(".cell").mousedown(function() {
 
         if (27 > dat < 756) {
             vals.forEach(function(item) {
-                console.log($('[data-indx =' + String(item) + ']').data("indx"));
                 $('[data-indx =' + String(item) + ']').css("opacity", parseFloat($('[data-indx =' + String(item) + ']').css("opacity")) + 0.5);
             });
 
