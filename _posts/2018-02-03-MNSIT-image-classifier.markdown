@@ -8,7 +8,7 @@ categories: machine learning, game
 
 This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!
 <html>
-    <div class = 'post2'>
+    <body class = 'post2'>
         <div class = 'board'>
             <div class='cell' data-indx = "0" ></div>
             <div class='cell' data-indx = "1" ></div>
@@ -794,5 +794,5 @@ This post is a work in progress. Check out my interactive tic-tac-toe game in my
             <div class='cell' data-indx = "782" ></div>
             <div class='cell' data-indx = "783" ></div>
         </div>
-    </div>
+    </body>
 </html>
