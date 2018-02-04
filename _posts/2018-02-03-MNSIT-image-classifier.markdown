@@ -6,4 +6,4 @@ categories: machine learning, game
 
 ---
 
-Lets do it
+This psot is a work in progress. Check out my interactive tic-tac-toe game in my previous post!
