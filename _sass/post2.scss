@@ -4,12 +4,16 @@
     }
 
     canvas#canvas {
+        margin-top:20px;
         border: 2px solid black;
         background-color: black;
     }
 
     div#elements {
-        position: absolute;
+        position: relative;
+        width: 300px;
+        display: inline-block;
+        
     }
 
     div#info {
@@ -60,5 +64,6 @@
 
     #bottom {
         width: 474px;
+        float: left;
     }
 }
