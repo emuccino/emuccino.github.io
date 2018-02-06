@@ -249,7 +249,7 @@ function clear(evt) {
 	}
 
 	var ctx = canvas.getContext("2d");
-	ctx.fillStyle = 'rgba(255,255,255,255)';
+	ctx.fillStyle = 'black';
 	ctx.fillRect(0, 0, SCREEN_MULTIPLIER * PIXELS, SCREEN_MULTIPLIER * PIXELS);
 }
 
