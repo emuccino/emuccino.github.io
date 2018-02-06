@@ -20,7 +20,6 @@ jsarr:
 			<p class="guess">Guess: <span id="guess"></span><button id="clearbutton">Clear</button></p>
 		</div>
 	</div>
-	</div>
 	<div id="elements">
 		<div class="bar" style="margin-top: 0px"><b>Neuron Activations</b></div>
 		<div class="bar"><b>0 </b><div class="meter"><span style="width: 25%" class="0"></span></div></div>
@@ -33,6 +32,7 @@ jsarr:
 		<div class="bar"><b>7 </b><div class="meter"><span style="width: 25%" class="7"></span></div></div>
 		<div class="bar"><b>8 </b><div class="meter"><span style="width: 25%" class="8"></span></div></div>
 		<div class="bar"><b>9 </b><div class="meter"><span style="width: 25%" class="9"></span></div></div>
+	</div>
 	</div>
 </body>
 </html>
