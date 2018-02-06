@@ -4,7 +4,10 @@ title:  "MNIST Image Classifier"
 date:   2018-02-03 02:40:08 +0000
 categories: machine learning, game
 jsarr:
-- _js/drawingboard.js
+- _js/mnist_network.js
+- _js/mnist_weights_0.json
+- _js/mnist_weights_1.json
+- _js/canvas.js
 ---
 
 <html>
