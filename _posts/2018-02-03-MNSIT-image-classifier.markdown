@@ -12,7 +12,8 @@ jsarr:
 
 <html>
 <body class = 'post2'>
-    	<p>This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!</p>
+    	<p>A feed-forward Neural Network was trained to classify a 28x28 pixel grid as a digit from 0-9. The multilayered network was trained with the MNIST database of handwritten digits which can be found <a href="http://yann.lecun.com/exdb/mnist/">here</a>.</p>
+	<p>Draw a number from 0-9 on the canvas below. USe the full height of the canvas for the best results.</p>
 	<div style="position: relative; width:900px; float:left;">
 		<div style="height:540; display: inline-block; width: 484px; float:inherit; margin-top: 30px; ">
 			<canvas id="canvas"></canvas>
