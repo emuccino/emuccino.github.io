@@ -50,12 +50,12 @@ var brush1x1 = [[255]];
 
 function canvasRelativeX(pageX) {
 	var rect = canvas.getBoundingClientRect();
-	return pageX - rect.left;
+	return pageX - rect.left - window.scrollX;
 }
 
 function canvasRelativeY(pageY) {
 	var rect = canvas.getBoundingClientRect();
-	return pageY - rect.top;
+	return pageY - rect.top - window.scrollY;
 }
 
 function getPixelXFromPageX(pageX) {
