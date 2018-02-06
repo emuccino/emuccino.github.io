@@ -13,7 +13,7 @@ jsarr:
 <html>
 <body class = 'post2'>
     	<p>This post is a work in progress. Check out my interactive tic-tac-toe game in my previous post!</p>
-	<div style="position: relative">
+	<div style="position: relative; width:900px; float:left;">
 		<canvas id="canvas"></canvas>
 		<div id="bottom">
 			<p class="guess">Guess: <span id="guess"></span><button id="clearbutton">Clear</button></p>
