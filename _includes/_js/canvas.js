@@ -323,14 +323,13 @@ function get_image_for_nn() {
 	add_zero_rows(padOffsetBottom);
 
 	var nn_x = [sample];
-	console.log(nn_x);
 	return nn_x;
 }
 
 /*Pass pixels through Neural Net*/
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
-
+	console.log(appendones(get_image_for_nn()));
 	var layer1 = appendones(logistic(matmult(layer0, weights0)));
 
 	var layer2 = logistic(matmult(layer1, weights1));
