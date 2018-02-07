@@ -1,5 +1,6 @@
 /*Neural Network helper functions*/
 
+/*Adds bias neuron*/
 function appendones(m) {
 	var result = m.slice();
 
