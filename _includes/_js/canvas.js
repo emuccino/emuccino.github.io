@@ -323,6 +323,7 @@ function get_image_for_nn() {
 	add_zero_rows(padOffsetBottom);
 
 	var nn_x = [sample];
+	console.log(nn_x);
 	return nn_x;
 }
 
