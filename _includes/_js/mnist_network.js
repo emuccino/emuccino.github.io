@@ -1,3 +1,5 @@
+/*Neural Network helper functions*/
+
 function appendones(m) {
 	var result = m.slice();
 
