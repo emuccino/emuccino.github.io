@@ -48,17 +48,18 @@ var brush2x2 = [
 
 var brush1x1 = [[255]];
 
-
+/*Get canvas X position*/
 function canvasRelativeX(pageX) {
 	var rect = canvas.getBoundingClientRect();
 	return pageX - rect.left - window.scrollX;
 }
 
+/*Get canvas Y position*/
 function canvasRelativeY(pageY) {
 	var rect = canvas.getBoundingClientRect();
-	console.log(pageY, rect.top, window.scrollY);
 	return pageY - rect.top - window.scrollY;
 }
+
 
 function getPixelXFromPageX(pageX) {
 	var canvasWidth = canvas.getBoundingClientRect().width;
@@ -69,6 +70,7 @@ function getPixelXFromPageX(pageX) {
 function getPixelYFromPageY(pageY) {
 	var canvasHeight = canvas.getBoundingClientRect().height;
 	var multiplier = canvasHeight / PIXELS;
+	console.log(Math.floor(canvasRelativeY(pageY) / multiplier));
 	return Math.floor(canvasRelativeY(pageY) / multiplier);
 }
 
