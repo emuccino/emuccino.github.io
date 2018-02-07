@@ -60,25 +60,25 @@ function canvasRelativeY(pageY) {
 	return pageY - rect.top - window.scrollY;
 }
 
-
+/*Get pixel X from canvas position*/
 function getPixelXFromPageX(pageX) {
 	var canvasWidth = canvas.getBoundingClientRect().width;
 	var multiplier = canvasWidth / PIXELS;
 	return Math.floor(canvasRelativeX(pageX) / multiplier);
 }
 
+/*Get pixel Y from canvas position*/
 function getPixelYFromPageY(pageY) {
 	var canvasHeight = canvas.getBoundingClientRect().height;
 	var multiplier = canvasHeight / PIXELS;
-	console.log(Math.floor(canvasRelativeY(pageY) / multiplier), canvasRelativeY(pageY));
 	return Math.floor(canvasRelativeY(pageY) / multiplier);
 }
+
 
 function drawMouseStart(evt) {
 	isDrawing = true;
 	lastX = getPixelXFromPageX(evt.pageX) -1;
 	lastY = getPixelYFromPageY(evt.pageY);
-
 	return drawMouse(evt);
 }
 
@@ -95,6 +95,7 @@ function drawMouse(evt) {
 	return draw(x, y);
 }
 
+/*Drawing on touchscreen*/
 function drawTouchStart(evt) {
 	isDrawing = true;
 	var touch = evt.touches.item(0);
@@ -116,10 +117,10 @@ function drawTouch(evt) {
 	return draw(x, y);
 }
 
+/*Adjust canvas based on screen screen dimension*/
 function sizeCanvas() {
 	var multiplier;
 	var portraitOrientation;
-	
 	if(window.innerHeight > window.innerWidth) {
 		portraitOrientation = true;
 		SCREEN_MULTIPLIER = Math.floor(window.innerWidth / PIXELS);
@@ -127,12 +128,9 @@ function sizeCanvas() {
 		portraitOrientation = false;
 		SCREEN_MULTIPLIER = Math.floor((window.innerHeight - 100)/ PIXELS);
 	}
-
 	SCREEN_MULTIPLIER = Math.min(SCREEN_MULTIPLIER, 4);
-
 	canvas.width = PIXELS * SCREEN_MULTIPLIER;
 	canvas.height = PIXELS * SCREEN_MULTIPLIER;
-
 	return portraitOrientation;
 }
 
@@ -150,26 +148,20 @@ function sizeElements() {
 	}
 }
 
-
+/*Initialize canvas with size and drawing functions*/
 function init() {
 	canvas = document.getElementById("canvas"); 
-
 	sizeElements();
-
 	for(var i = 0; i < PIXELS * PIXELS; i++) {
 		pixelData.push(255);
 	}
-
 	isDrawing = false;
-
 	canvas.addEventListener("mousedown", drawMouseStart);
 	canvas.addEventListener("mousemove", drawMouse);
 	canvas.addEventListener("mouseup", drawEnd);
-
 	canvas.addEventListener("touchstart", drawTouchStart);
 	canvas.addEventListener("touchmove", drawTouch);
 	canvas.addEventListener("touchend", drawEnd);
-
 	document.getElementById("clearbutton").addEventListener("click", clear);
 }
 
@@ -247,11 +239,11 @@ function draw(x, y) {
 	return false;
 }
 
+/*Clear canavs*/
 function clear(evt) {
 	for(var i = 0; i < (PIXELS * PIXELS); i++) {
 		pixelData[i] = 255;
 	}
-
 	var ctx = canvas.getContext("2d");
 	ctx.fillStyle = 'black';
 	ctx.fillRect(0, 0, SCREEN_MULTIPLIER * PIXELS, SCREEN_MULTIPLIER * PIXELS);
@@ -334,6 +326,7 @@ function get_image_for_nn() {
 	return nn_x;
 }
 
+/*Pass pixels through Neural Net*/
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
 
@@ -346,8 +339,9 @@ function run_network() {
 		if(layer2[0][i] > layer2[0][max_idx])
 			max_idx = i;
 	}
-	document.getElementById("guess").innerHTML = "<b>" + max_idx + "</b>";
 	
+	document.getElementById("guess").innerHTML = "<b>" + max_idx + "</b>";
+	/*Set Neuron activation bars*/
 	$(".0").css("width", String(layer2[0][0]*100) + "%");
 	$(".1").css("width", String(layer2[0][1]*100) + "%");
 	$(".2").css("width", String(layer2[0][2]*100) + "%");
