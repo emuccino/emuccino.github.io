@@ -12,7 +12,7 @@ jsarr:
 
 <html>
 <body class = 'post2'>
-    	<p>A feed-forward Neural Network was trained to classify a 28x28 pixel grid as a digit from 0-9. The multilayered network was trained with the MNIST database of handwritten digits which can be found <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">here</a>.</p>
+    	<p>A feed-forward Neural Network was trained to classify a 28x28 pixel grid as a digit from 0-9. The network has an input layer of 784 neurons, one hidden layer of 200 neurons, and an output layer of 10 neurons (one for each digit). It was trained with the MNIST database of handwritten digits which can be found <a href="http://yann.lecun.com/exdb/mnist/" target="_blank">here</a>.</p>
 	<p>Draw a number from 0-9 on the canvas below. USe the full height of the canvas for the best results.</p>
 	<div style="position: relative; width:900px; float:left;">
 		<div style="height:540; display: inline-block; width: 484px; float:inherit; margin-top: 30px; ">
