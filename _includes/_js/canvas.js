@@ -70,7 +70,7 @@ function getPixelXFromPageX(pageX) {
 function getPixelYFromPageY(pageY) {
 	var canvasHeight = canvas.getBoundingClientRect().height;
 	var multiplier = canvasHeight / PIXELS;
-	console.log(Math.floor(canvasRelativeY(pageY) / multiplier));
+	console.log(Math.floor(canvasRelativeY(pageY) / multiplier), canvasRelativeY(pageY));
 	return Math.floor(canvasRelativeY(pageY) / multiplier);
 }
 
