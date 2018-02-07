@@ -1,5 +1,5 @@
+/*Canavs object*/
 var canvas;
-
 var pixelData = [];
 var PIXELS = 120;
 var NN_PIXELS = 20;
@@ -61,6 +61,7 @@ function canvasRelativeY(pageY) {
 function getPixelXFromPageX(pageX) {
 	var canvasWidth = canvas.getBoundingClientRect().width;
 	var multiplier = canvasWidth / PIXELS;
+	console.log(Math.floor(canvasRelativeX(pageX) / multiplier));
 	return Math.floor(canvasRelativeX(pageX) / multiplier);
 }
 
