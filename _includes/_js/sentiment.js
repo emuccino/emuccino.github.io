@@ -1,5 +1,5 @@
-totalbad = 17778;
-totalgood = 17932;
+totalbad = 18000;
+totalgood = 18000;
 
 var probbad = function(word) {
 	var b = bad[word]
