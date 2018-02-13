@@ -14,7 +14,7 @@ jsarr:
     <body class = "post3">
         <div>
             <p>
-            Text: <input type="text" id="input" rows="3" cols="80"/></p><br>
+            Text: <input type="text" id="input" rows="3" cols="80"/></p>
             <input type="submit" value="Submit" id="submit"/>
         </div>
         <div id="elements">
@@ -22,8 +22,5 @@ jsarr:
             <div class="bar"><b>Bad  </b><div class="meter"><span style="width: 50%" class="bad"></span></div></div>
         </div>
         <div><p id = "result"></p></div>
-        <script src="bad.json"></script>
-        <script src="good.json"></script>
-        <script src="sentiment.js"></script>
     </body>
 </html>
