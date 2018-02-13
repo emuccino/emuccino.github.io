@@ -12,9 +12,11 @@ jsarr:
 
 <html>
     <body class = "post3">
-        <p>
-        Text: <input type="text" id="input" rows="3" cols="80"/></p><br>
-        <input type="submit" value="Submit" id="submit"/>
+        <div>
+            <p>
+            Text: <input type="text" id="input" rows="3" cols="80"/></p><br>
+            <input type="submit" value="Submit" id="submit"/>
+        </div>
         <div id="elements">
             <div class="bar"><b>Good  </b><div class="meter"><span style="width: 50%" class="good"></span></div></div>
             <div class="bar"><b>Bad  </b><div class="meter"><span style="width: 50%" class="bad"></span></div></div>
