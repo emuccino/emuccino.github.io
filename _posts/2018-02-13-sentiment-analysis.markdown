@@ -16,9 +16,9 @@ jsarr:
         Text: <input type="text" id="input" rows="3" cols="80"/><br><br>
         <input type="submit" value="Submit" id="submit"/>
         <div id="elements">
-          <div class="bar"><b>Good  </b><div class="meter"><span style="width: 50%" class="good"></span></div></div>
+            <div class="bar"><b>Good  </b><div class="meter"><span style="width: 50%" class="good"></span></div></div>
 
-          <div class="bar"><b>Bad  </b><div class="meter"><span style="width: 50%" class="bad"></span></div></div>
+            <div class="bar"><b>Bad  </b><div class="meter"><span style="width: 50%" class="bad"></span></div></div>
         </div>
         <div><p id = "result"></p></div>
 
