@@ -12,7 +12,7 @@ jsarr:
 
 <html>
     <body class = "post3">
-    <p>Here is a program that uses a Naive Bayes algorithm on a albeled sentiment dataset that can be found <a href="https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences">here</a> .</p>
+    <p>Here is a program that uses a Naive Bayes algorithm on a albeled sentiment dataset that can be found <a href="https://archive.ics.uci.edu/ml/datasets/Sentiment+Labelled+Sentences" target="_blank">here</a>.</p>
     <p>Enter a sentimentally charged line of English text in the textbox to have it classified.</p>
         <div>
             <p>
