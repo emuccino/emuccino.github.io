@@ -1,6 +1,8 @@
+/*Estimate of total good/bad sentiment tokens in dictionaries*/
 totalbad = 18000;
 totalgood = 18000;
 
+/*Naive Bayes probability of finding word in negative sentiment*/
 var probbad = function(word) {
 	var b = bad[word]
 	var g = good[word]
@@ -13,6 +15,7 @@ var probbad = function(word) {
 	return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
 };
 
+/*Naive Bayes probability of finding word in positive sentiment*/
 var probgood = function(word) {
 	var b = bad[word]
 	var g = good[word]
@@ -25,6 +28,7 @@ var probgood = function(word) {
 	return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
 };
 
+/*Turns text input into list of words*/
 var filter = function(sentence) {
 
 	string = sentence.toLowerCase().split("");
@@ -40,11 +44,11 @@ var filter = function(sentence) {
 	return string
 }
 
+/*Takes list of words and finds total probabilites*/
 var prob = function(words) {
 	bprob = 0;
 	gprob = 0;
 	for (var word in words) {
-		console.log([probbad(words[word]),probgood(words[word])])
 		bprob+=Math.log(probbad(words[word]));
 		gprob+=Math.log(probgood(words[word]));
 	};
@@ -52,6 +56,7 @@ var prob = function(words) {
 	return [Math.exp(bprob), Math.exp(gprob), words.length]
 }
 
+/*Click button executes good/bad sentiment comparison and displayes results*/
 $("#submit").click(function() {
 	var sentence = document.getElementById("input").value;
 	var results = prob(filter(sentence))
@@ -68,7 +73,5 @@ $("#submit").click(function() {
 
 	$(".good").css("width", String(100*results[1]/(results[0]+results[1])) + "%");
 	$(".bad").css("width", String(100*results[0]/(results[0]+results[1])) + "%");
-
-
 });
 
