@@ -104,7 +104,11 @@ var filter = function(sentence) {
 var prob = function(words) {
 	bprob = 0;
 	gprob = 0;
-;
+	bprob2 = 0;
+	gprob2 = 0;
+	bprob3 = 0;
+	gprob3 = 0;
+	
 	for (var word in words) {
 		bprob+=Math.log(probbad(words[word]));
 		gprob+=Math.log(probgood(words[word]));
@@ -112,19 +116,20 @@ var prob = function(words) {
 	
 	if (words.length > 1) {
 		for (var i = 0; i < words.length-1; i++) {
-			bprob+=Math.log(probbad2(words[i]+'-'+words[i+1]));
-			gprob+=Math.log(probgood2(words[i]+'-'+words[i+1]));
+			bprob2+=Math.log(probbad2(words[i]+'-'+words[i+1]));
+			gprob2+=Math.log(probgood2(words[i]+'-'+words[i+1]));
 		}
 	}
 	
 	if (words.length > 2) {
 		for (var i = 0; i < words.length-2; i++) {
-			bprob+=Math.log(probbad3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
-			gprob+=Math.log(probgood3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
+			bprob3+=Math.log(probbad3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
+			gprob3+=Math.log(probgood3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
 		}
 	}
-			
-	return [Math.exp(bprob), Math.exp(gprob), words.length]
+	console.log(bprob,bprob2,bprob3,gprob,gprob2,gprob3);
+	
+	return [Math.exp(bprob+bprob2+bprob3), Math.exp(gprob+gprob2+gprob3), words.length]
 }
 
 /*Click button executes good/bad sentiment comparison and displayes results*/
