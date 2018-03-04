@@ -1,6 +1,10 @@
 /*Estimate of total good/bad sentiment tokens in dictionaries*/
 totalbad = 160000;
 totalgood = 160000;
+totalbad2 = 150000;
+totalgood2 = 150000;
+totalbad3 = 140000;
+totalgood3 = 140000;
 
 /*Naive Bayes probability of finding word in negative sentiment*/
 var probbad = function(word) {
@@ -15,6 +19,32 @@ var probbad = function(word) {
 	return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
 };
 
+/*Naive Bayes probability of finding 2-gram word in negative sentiment*/
+var probbad2 = function(word) {
+	var b = bad2[word]
+	var g = good2[word]
+	if (isNaN(bad2[word])) {
+		b = 0;
+	}
+	if (isNaN(good2[word])) {
+		g = 0;
+	}
+	return (.5 * ((1 + b)/(2 + totalbad2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+};
+
+/*Naive Bayes probability of finding 3-gram word in negative sentiment*/
+var probbad3 = function(word) {
+	var b = bad3[word]
+	var g = good3[word]
+	if (isNaN(bad3[word])) {
+		b = 0;
+	}
+	if (isNaN(good3[word])) {
+		g = 0;
+	}
+	return (.5 * ((1 + b)/(2 + totalbad3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
+};
+
 /*Naive Bayes probability of finding word in positive sentiment*/
 var probgood = function(word) {
 	var b = bad1[word]
@@ -26,6 +56,32 @@ var probgood = function(word) {
 		g = 0;
 	}
 	return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
+};
+
+/*Naive Bayes probability of finding 2-gram word in positive sentiment*/
+var probgood2 = function(word) {
+	var b = bad2[word]
+	var g = good2[word]
+	if (isNaN(bad2[word])) {
+		b = 0;
+	}
+	if (isNaN(good2[word])) {
+		g = 0;
+	}
+	return (.5 * ((1 + g)/(2 + totalgood2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+};
+
+/*Naive Bayes probability of finding 3-gram word in positive sentiment*/
+var probgood3 = function(word) {
+	var b = bad3[word]
+	var g = good3[word]
+	if (isNaN(bad3[word])) {
+		b = 0;
+	}
+	if (isNaN(good3[word])) {
+		g = 0;
+	}
+	return (.5 * ((1 + g)/(2 + totalgood3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
 };
 
 /*Turns text input into list of words*/
@@ -48,11 +104,26 @@ var filter = function(sentence) {
 var prob = function(words) {
 	bprob = 0;
 	gprob = 0;
+;
 	for (var word in words) {
 		bprob+=Math.log(probbad(words[word]));
 		gprob+=Math.log(probgood(words[word]));
 	};
-
+	
+	if (words.length > 1) {
+		for (var i = 0; i < words.length-1; i++) {
+			bprob+=Math.log(probbad2(words[i]+'-'+words[i+1]));
+			gprob+=Math.log(probgood2(words[i]+'-'+words[i+1]));
+		}
+	}
+	
+	if (words.length > 2) {
+		for (var i = 0; i < words.length-2; i++) {
+			bprob+=Math.log(probbad3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
+			gprob+=Math.log(probgood3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
+		}
+	}
+			
 	return [Math.exp(bprob), Math.exp(gprob), words.length]
 }
 
