@@ -16,7 +16,11 @@ var probbad = function(word) {
 	if (isNaN(good1[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
+	}
 };
 
 /*Naive Bayes probability of finding 2-gram word in negative sentiment*/
@@ -29,7 +33,11 @@ var probbad2 = function(word) {
 	if (isNaN(good2[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + b)/(2 + totalbad2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + b)/(2 + totalbad2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+	}
 };
 
 /*Naive Bayes probability of finding 3-gram word in negative sentiment*/
@@ -42,7 +50,11 @@ var probbad3 = function(word) {
 	if (isNaN(good3[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + b)/(2 + totalbad3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + b)/(2 + totalbad3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
+	}
 };
 
 /*Naive Bayes probability of finding word in positive sentiment*/
@@ -55,7 +67,11 @@ var probgood = function(word) {
 	if (isNaN(good1[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
+	}
 };
 
 /*Naive Bayes probability of finding 2-gram word in positive sentiment*/
@@ -68,7 +84,11 @@ var probgood2 = function(word) {
 	if (isNaN(good2[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + g)/(2 + totalgood2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + g)/(2 + totalgood2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
+	}
 };
 
 /*Naive Bayes probability of finding 3-gram word in positive sentiment*/
@@ -81,7 +101,11 @@ var probgood3 = function(word) {
 	if (isNaN(good3[word])) {
 		g = 0;
 	}
-	return (.5 * ((1 + g)/(2 + totalgood3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
+	if (b===0 && g===0) {
+		return 0
+	} else {
+		return (.5 * ((1 + g)/(2 + totalgood3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
+	}
 };
 
 /*Turns text input into list of words*/
