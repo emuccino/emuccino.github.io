@@ -5,8 +5,12 @@ date:   2018-02-13 02:40:08 +0000
 categories: machine learning, game
 jsarr:
 - _js/jquery-1.10.1.min.js
-- _js/goodset.json
-- _js/badset.json
+- _js/good1.json
+- _js/bad1.json
+- _js/good2.json
+- _js/bad2.json
+- _js/good3.json
+- _js/bad3.json
 - _js/sentiment.js
 ---
 
