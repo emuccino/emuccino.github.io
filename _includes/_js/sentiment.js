@@ -153,7 +153,7 @@ var prob = function(words) {
 	}
 	console.log(Math.exp(bprob),Math.exp(bprob2),Math.exp(bprob3),Math.exp(gprob),Math.exp(gprob2),Math.exp(gprob3));
 	
-	return [Math.exp(bprob)+4*Math.exp(bprob2)+27*Math.exp(bprob3), Math.exp(gprob)+3*Math.exp(gprob2)+27*Math.exp(gprob3), words.length]
+	return [Math.exp(bprob)+4*Math.exp(bprob2)+27*Math.exp(bprob3), Math.exp(gprob)+4*Math.exp(gprob2)+27*Math.exp(gprob3), words.length]
 }
 
 /*Click button executes good/bad sentiment comparison and displayes results*/
