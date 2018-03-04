@@ -127,7 +127,7 @@ var prob = function(words) {
 			gprob3+=Math.log(probgood3(words[i]+'-'+words[i+1]+'-'+words[i+2]));
 		}
 	}
-	console.log(bprob,bprob2,bprob3,gprob,gprob2,gprob3);
+	console.log(Math.exp(bprob),Math.exp(bprob2),Math.exp(bprob3),Math.exp(gprob),Math.exp(gprob2),Math.exp(gprob3));
 	
 	return [Math.exp(bprob+bprob2+bprob3), Math.exp(gprob+gprob2+gprob3), words.length]
 }
