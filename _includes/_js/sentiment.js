@@ -17,7 +17,7 @@ var probbad = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return .5
 	} else {
 		return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
 	}
@@ -34,7 +34,7 @@ var probbad2 = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return 0.5
 	} else {
 		return (.5 * ((1 + b)/(2 + totalbad2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
 	}
@@ -51,7 +51,7 @@ var probbad3 = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return 0.5
 	} else {
 		return (.5 * ((1 + b)/(2 + totalbad3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
 	}
@@ -68,7 +68,7 @@ var probgood = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return 0.5
 	} else {
 		return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
 	}
@@ -85,7 +85,7 @@ var probgood2 = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return 0.5
 	} else {
 		return (.5 * ((1 + g)/(2 + totalgood2))) / ((.5 * ((1 + b)/(2 + totalbad2))) + (.5 * ((1 + g)/(2 + totalgood2))))
 	}
@@ -102,7 +102,7 @@ var probgood3 = function(word) {
 		g = 0;
 	}
 	if (b===0 && g===0) {
-		return 0.000001
+		return 0.5
 	} else {
 		return (.5 * ((1 + g)/(2 + totalgood3))) / ((.5 * ((1 + b)/(2 + totalbad3))) + (.5 * ((1 + g)/(2 + totalgood3))))
 	}
