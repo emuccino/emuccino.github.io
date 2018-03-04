@@ -152,7 +152,7 @@ var prob = function(words) {
 		}
 	}
 	console.log(Math.exp(bprob),Math.exp(bprob2),Math.exp(bprob3),Math.exp(gprob),Math.exp(gprob2),Math.exp(gprob3));
-	var score1 = Math.exp(bprob)-Math.exp(gprob)+10*(Math.exp(bprob2)-Math.exp(gprob2))+100*(Math.exp(bprob3)-Math.exp(gprob3));
+	var score1 = Math.exp(bprob)-Math.exp(gprob)+3*(Math.exp(bprob2)-Math.exp(gprob2))+9*(Math.exp(bprob3)-Math.exp(gprob3));
 	var score2 = -score1;
 	return [score1, score2]
 }
