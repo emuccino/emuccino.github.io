@@ -152,8 +152,8 @@ var prob = function(words) {
 		}
 	}
 	console.log(Math.exp(bprob),Math.exp(bprob2),Math.exp(bprob3),Math.exp(gprob),Math.exp(gprob2),Math.exp(gprob3));
-	var score1 = Math.exp(bprob-gprob)+4*Math.exp(bprob2-gprob2)+27*Math.exp(bprob3-gprob3);
-	var score2 = Math.exp(gprob-bprob)+4*Math.exp(gprob2-bprob2)+27*Math.exp(gprob3-bprob3);
+	var score1 = Math.exp(bprob)-Math.exp(gprob)+4*(Math.exp(bprob2)-Math.exp(gprob2))+27*(Math.exp(bprob3)-Math.exp(gprob3));
+	var score2 = -score1;
 	return [score1, score2, words.length]
 }
 
