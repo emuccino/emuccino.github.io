@@ -1,10 +1,10 @@
 /*Estimate of total good/bad sentiment tokens in dictionaries*/
-totalbad = 160000;
-totalgood = 160000;
-totalbad2 = 150000;
-totalgood2 = 150000;
-totalbad3 = 140000;
-totalgood3 = 140000;
+totalbad = 153200;
+totalgood = 160101;
+totalbad2 = 143278;
+totalgood2 = 149275;
+totalbad3 = 133368;
+totalgood3 = 138457;
 
 /*Naive Bayes probability of finding word in negative sentiment*/
 var probbad = function(word) {
