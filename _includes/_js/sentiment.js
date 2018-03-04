@@ -1,15 +1,15 @@
 /*Estimate of total good/bad sentiment tokens in dictionaries*/
-totalbad = 18000;
-totalgood = 18000;
+totalbad = 160000;
+totalgood = 160000;
 
 /*Naive Bayes probability of finding word in negative sentiment*/
 var probbad = function(word) {
-	var b = bad[word]
-	var g = good[word]
-	if (isNaN(bad[word])) {
+	var b = bad1[word]
+	var g = good1[word]
+	if (isNaN(bad1[word])) {
 		b = 0;
 	}
-	if (isNaN(good[word])) {
+	if (isNaN(good1[word])) {
 		g = 0;
 	}
 	return (.5 * ((1 + b)/(2 + totalbad))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
@@ -17,12 +17,12 @@ var probbad = function(word) {
 
 /*Naive Bayes probability of finding word in positive sentiment*/
 var probgood = function(word) {
-	var b = bad[word]
-	var g = good[word]
-	if (isNaN(bad[word])) {
+	var b = bad1[word]
+	var g = good1[word]
+	if (isNaN(bad1[word])) {
 		b = 0;
 	}
-	if (isNaN(good[word])) {
+	if (isNaN(good1[word])) {
 		g = 0;
 	}
 	return (.5 * ((1 + g)/(2 + totalgood))) / ((.5 * ((1 + b)/(2 + totalbad))) + (.5 * ((1 + g)/(2 + totalgood))))
