@@ -164,12 +164,12 @@ $("#submit").click(function() {
 	console.log(prob(filter(sentence)));
 	if (results[0] > results[1]) {
 		var sent='Negative';
-		$(".good").css("width", String(100-(200*results[0]/(results[0]+1)) + "%"));
-		$(".bad").css("width", String(200*results[0]/(results[0]+1) + "%"));
-	} else if (results[0] < results[1]) {
-		var sent='Positive';
 		$(".good").css("width", String(200*results[0]/(results[0]+1) + "%"));
 		$(".bad").css("width", String(100-(200*results[0]/(results[0]+1)) + "%"));
+	} else if (results[0] < results[1]) {
+		var sent='Positive';
+		$(".good").css("width", String(100-(200*results[0]/(results[0]+1)) + "%"));
+		$(".bad").css("width", String(200*results[0]/(results[0]+1) + "%"));
 	} else {
 		var sent='Neutral';
 		$(".good").css("width", String(50 + "%"));
