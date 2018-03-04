@@ -171,8 +171,8 @@ $("#submit").click(function() {
 		$(".bad").css("width", String(100-(200*results[0]/(results[0]+1)) + "%");
 	} else {
 		var sent='Neutral';
-		$(".good").css("width", String(50 + "%");
-		$(".bad").css("width", String(50 + "%");
+		$(".good").css("width", String(50 + "%"));
+		$(".bad").css("width", String(50 + "%"));
 	}
 
 	$('#result').html('I detect <b>'+ sent + '</b> sentiment.')
