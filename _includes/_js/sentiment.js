@@ -152,7 +152,7 @@ var prob = function(words) {
 		}
 	}
 	console.log(Math.exp(bprob),Math.exp(bprob2),Math.exp(bprob3),Math.exp(gprob),Math.exp(gprob2),Math.exp(gprob3));
-	var score = Math.exp(bprob)-Math.exp(gprob)+4*(Math.exp(bprob2)-Math.exp(gprob2))+27*(Math.exp(bprob3)-Math.exp(gprob3))
+	var score = (Math.exp(bprob)-Math.exp(gprob))+4*(Math.exp(bprob2)-Math.exp(gprob2))+27*(Math.exp(bprob3)-Math.exp(gprob3));
 	return [score, -score, words.length]
 }
 
@@ -163,12 +163,12 @@ $("#submit").click(function() {
 	console.log(prob(filter(sentence)));
 	if (results[0] > results[1]) {
 		var sent='Negative';
-		$(".good").css("width", String(100-200*results[0]/(results[0]+1)) + "%");
-		$(".bad").css("width", String(200*results[0]/(results[0]+1)) + "%");
+		$(".good").css("width", String(100-(200*results[0]/(results[0]+1)) + "%");
+		$(".bad").css("width", String(200*results[0]/(results[0]+1) + "%");
 	} else if (results[0] < results[1]) {
 		var sent='Positive';
-		$(".good").css("width", String(200*results[0]/(results[0]+1)) + "%");
-		$(".bad").css("width", String(100-200*results[0]/(results[0]+1)) + "%");
+		$(".good").css("width", String(200*results[0]/(results[0]+1) + "%");
+		$(".bad").css("width", String(100-(200*results[0]/(results[0]+1)) + "%");
 	} else {
 		var sent='Neutral';
 		$(".good").css("width", String(50 + "%");
