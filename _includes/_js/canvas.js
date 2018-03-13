@@ -330,9 +330,9 @@ function get_image_for_nn() {
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
 	
-	var layer1 = appendones(logistic(matmult(layer0, weights0)));
+	var layer1 = appendones(relu(matmult(layer0, weights0)));
 
-	var layer2 = logistic(matmult(layer1, weights1));
+	var layer2 = relu(matmult(layer1, weights1));
 
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
