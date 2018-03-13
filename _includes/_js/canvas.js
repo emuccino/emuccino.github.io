@@ -326,7 +326,26 @@ function get_image_for_nn() {
 	return nn_x;
 }
 
-function softmax(array) {
+function softmax(m) {
+	var result = m.slice;
+	
+	for(y = 0; y < m.length; y++) {
+		var result_row = [];
+		var total = 0;
+		
+		for(x = 0; x < m[y].length; x++) {
+			total += Math.exp(m[y][x]);
+		}
+		for(x = 0; x < m[y].length; x++) {
+			result[y][x] = Math.exp(m[y][x]) / total;
+		}
+	}
+
+	return result;
+	
+	
+	
+	
 	var newArray = [];
 	var total = 0;
 	for (var i = 0; i < array.length; ++i) {
