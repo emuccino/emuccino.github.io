@@ -344,7 +344,7 @@ function run_network() {
 	
 	var layer1 = appendones(relu(matmult(layer0, weights0)));
 
-	var layer2 = matmult(layer1, weights1);
+	var layer2 = softmax(matmult(layer1, weights1));
 
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
