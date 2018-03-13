@@ -14,11 +14,11 @@ function relu(m) {
 	var result = [];
 
 	for(y = 0; y < m.length; y++) {
-		var result_row = []
+		var result_row = [];
 
 		for(x = 0; x < m[y].length; x++) {
-			f = Math.max(0, m[y][x])
-			result_row.push(f)
+			var f = Math.max(0, m[y][x]);
+			result_row.push(f);
 		}
 		result.push(result_row);
 	}
