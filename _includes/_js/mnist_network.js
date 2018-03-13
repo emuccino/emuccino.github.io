@@ -3,7 +3,10 @@
 /*Adds bias neuron*/
 function appendones(m) {
 	var result = m.slice();
-	result.push(1);
+
+	for(var i = 0; i < result.length; i++) {
+		result[i].push(1);
+	}
 	return result;
 }
 
@@ -11,8 +14,13 @@ function relu(m) {
 	var result = [];
 
 	for(y = 0; y < m.length; y++) {
-		var f = Math.max(0, m[y]);
-		result.push(f);
+		var result_row = []
+
+		for(x = 0; x < m[y].length; x++) {
+			var f = Math.max(0, m[y][x]);
+			result_row.push(f);
+		}
+		result.push(result_row);
 	}
 
 	return result;
