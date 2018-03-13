@@ -327,7 +327,7 @@ function get_image_for_nn() {
 }
 
 function softmax(m) {
-	var result = m.slice;
+	var result = m.slice();
 	
 	for(y = 0; y < m.length; y++) {
 		var result_row = [];
