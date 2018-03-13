@@ -345,8 +345,11 @@ function run_network() {
 	console.log(weights0)
 	console.log(matmult(layer0,weights0))
 	var layer1 = appendones(relu(matmult(layer0, weights0)));
+	console.log(layer1)
+	console.log(matmult(layer1, weights1))
 
 	var layer2 = softmax(matmult(layer1, weights1));
+	console.log(layer2)
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
 		if (layer2[0][i] > layer2[0][max_idx]) {
