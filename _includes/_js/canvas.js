@@ -326,35 +326,15 @@ function get_image_for_nn() {
 	return nn_x;
 }
 
-function softmax(m) {
-	var result = m.slice();
-	
-	for(y = 0; y < m.length; y++) {
-		var result_row = [];
-		var total = 0;
-		
-		for(x = 0; x < m[y].length; x++) {
-			total += Math.exp(m[y][x]);
-		}
-		for(x = 0; x < m[y].length; x++) {
-			result[y][x] = Math.exp(m[y][x]) / total;
-		}
-	}
-	return result;
-}
 
 /*Pass pixels through Neural Net*/
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
-	console.log(layer0)
-	console.log(weights0)
-	console.log(matmult(layer0,weights0))
-	var layer1 = appendones(relu(matmult(layer0, weights0)));
-	console.log(layer1)
-	console.log(matmult(layer1, weights1))
 
-	var layer2 = softmax(matmult(layer1, weights1));
-	console.log(layer2)
+	var layer1 = appendones(logistic(matmult(layer0, weights0)));
+
+	var layer2 = logistic(matmult(layer1, weights1));
+
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
 		if (layer2[0][i] > layer2[0][max_idx]) {
