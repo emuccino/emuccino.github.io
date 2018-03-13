@@ -3,10 +3,7 @@
 /*Adds bias neuron*/
 function appendones(m) {
 	var result = m.slice();
-
-	for(var i = 0; i < result.length; i++) {
-		result[i].push(1);
-	}
+	result.push(1);
 	return result;
 }
 
