@@ -343,6 +343,7 @@ function run_network() {
 	var layer0 = appendones(get_image_for_nn());
 	console.log(layer0)
 	console.log(weights0)
+	console.log(matmult(layer0,weights0))
 	var layer1 = appendones(relu(matmult(layer0, weights0)));
 
 	var layer2 = softmax(matmult(layer1, weights1));
