@@ -327,15 +327,15 @@ function get_image_for_nn() {
 }
 
 function softmax(array) {
-	var new = [];
+	var newArray = [];
 	var total = 0;
 	for (var i = 0; i < array.length; ++i) {
 		total += Math.exp(array[i]);
 	}
 	for (var i = 0; i < array.length; ++i) {
-		new.push((Math.exp(array[i]))/total);
+		newArray.push((Math.exp(array[i]))/total);
 	}
-	return new
+	return newArray
 }
 
 /*Pass pixels through Neural Net*/
