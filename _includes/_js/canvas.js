@@ -327,13 +327,13 @@ function get_image_for_nn() {
 }
 
 function softmax(array) {
-	var new = []
-	var total = 0
+	var new = [];
+	var total = 0;
 	for (var i = 0; i < array.length; ++i) {
-		total += Math.exp(array[i])
+		total += Math.exp(array[i]);
 	}
 	for (var i = 0; i < array.length; ++i) {
-		new.push((Math.exp(array[i]))/total)
+		new.push((Math.exp(array[i]))/total);
 	}
 	return new
 }
@@ -348,8 +348,9 @@ function run_network() {
 
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
-		if(layer2[0][i] > layer2[0][max_idx])
+		if (layer2[0][i] > layer2[0][max_idx]) {
 			max_idx = i;
+		}
 	}
 	
 	document.getElementById("guess").innerHTML = "<b>" + max_idx + "</b>";
