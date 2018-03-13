@@ -10,6 +10,22 @@ function appendones(m) {
 	return result;
 }
 
+function logistic(m) {
+	var result = [];
+
+	for(y = 0; y < m.length; y++) {
+		var result_row = []
+
+		for(x = 0; x < m[y].length; x++) {
+			var f = 1.0 / (1.0 + Math.exp(-m[y][x]));
+			result_row.push(f);
+		}
+		result.push(result_row);
+	}
+
+	return result;
+}
+
 function relu(m) {
 	var result = [];
 
