@@ -341,11 +341,11 @@ function softmax(array) {
 /*Pass pixels through Neural Net*/
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
-	
+	console.log(layer0)
+	console.log(weights0)
 	var layer1 = appendones(relu(matmult(layer0, weights0)));
 
 	var layer2 = softmax(matmult(layer1, weights1));
-	console.log(layer1)
 	var max_idx = 0;
 	for(var i = 0; i < 10; i++) {
 		if (layer2[0][i] > layer2[0][max_idx]) {
