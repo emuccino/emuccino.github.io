@@ -326,6 +326,18 @@ function get_image_for_nn() {
 	return nn_x;
 }
 
+function softmax(array) {
+	var new = []
+	var total = 0
+	for (var i = 0; i < array.length; ++i) {
+		total += Math.exp(array[i])
+	}
+	for (var i = 0; i < array.length; ++i) {
+		new.push((Math.exp(array[i]))/total)
+	}
+	return new
+}
+
 /*Pass pixels through Neural Net*/
 function run_network() {
 	var layer0 = appendones(get_image_for_nn());
