@@ -340,21 +340,7 @@ function softmax(m) {
 			result[y][x] = Math.exp(m[y][x]) / total;
 		}
 	}
-
 	return result;
-	
-	
-	
-	
-	var newArray = [];
-	var total = 0;
-	for (var i = 0; i < array.length; ++i) {
-		total += Math.exp(array[i]);
-	}
-	for (var i = 0; i < array.length; ++i) {
-		newArray.push((Math.exp(array[i]))/total);
-	}
-	return newArray
 }
 
 /*Pass pixels through Neural Net*/
