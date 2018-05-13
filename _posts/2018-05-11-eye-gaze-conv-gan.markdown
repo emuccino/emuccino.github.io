@@ -13,9 +13,9 @@ categories: machine learning, gan
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.<br>
 <br>    
 Model architecture:<br>
-<br>
-Generator:<br>
-<pre>_________________________________________________________________
+<pre>
+Generator:
+_________________________________________________________________
 Layer                        Output Shape              Param #   
 =================================================================
 Input Layer                  (None, 64)                0         
