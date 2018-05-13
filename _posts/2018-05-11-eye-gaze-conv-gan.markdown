@@ -11,8 +11,11 @@ categories: machine learning, gan
     A generative adversarial network (GAN) is a system composed of two neural networks: a generator and a discriminator. The discriminator takes a data instance as input, and classifies it as 'Real' or 'Fake' with respect to a training data set. The generator takes gaussian noise and transforms it into a a fake data instance with the goal of fooling the discriminator. The discriminator learns from errors when training on inputs from a data set and inputs created by the generater. The generater learns from errors in failed attempts at fooling the discriminator.</p>
         <p>    
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.<br>
-
 <br>
+Results:<br>
+The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.<br>
+<img src="/assets/gifs/eye_gan_generator2.gif">
+<br>   
 Key takeaways:<br>
 <ul>
     <li>Batch normalization is necassary of convergence.</li>
@@ -21,10 +24,7 @@ Key takeaways:<br>
     <li>The generator needs to be trained more often and requires a significantly smaler learning rate compared to the discriminator. My
   suspicion is that this is because my generator and discriminator have equally deep architectures. This gives the discriminator the
   advantage since it has significantly less outputs to learn.</li></ul>
-<br>
-Results:<br>
-The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.<br>
-<br>    
+<br> 
 Model architecture:<br>
 <pre>
 Generator:
@@ -125,4 +125,4 @@ Total params: 1,645,250
 Trainable params: 1,208,513
 Non-trainable params: 436,737
 _________________________________________________________________</pre></p>
-        <img src="/assets/gifs/eye_gan_generator2.gif"></body></html>
+        </body></html>
