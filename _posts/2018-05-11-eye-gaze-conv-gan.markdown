@@ -108,9 +108,9 @@ generator (Model)            (None, 32, 64, 1)         1209473
 _________________________________________________________________
 discriminator (Model)        (None, 1)                 435777    
 =================================================================
-Total params: 1,645,250<br>
-Trainable params: 1,208,513<br>
-Non-trainable params: 436,737<br>
+Total params: 1,645,250
+Trainable params: 1,208,513
+Non-trainable params: 436,737
 _________________________________________________________________</pre>
 <br>
 Key takeaways:<br>
