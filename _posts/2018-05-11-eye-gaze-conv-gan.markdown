@@ -13,9 +13,9 @@ categories: machine learning, gan
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.<br>
 <br>
 <b>Results:</b><br>
-The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p><br><br>
+The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p><br>
 <img src="/assets/gifs/eye_gan_generator2.gif">
-<p><div style="">Evolution of generated test image over 105 training epochs.</div>
+<p>Evolution of generated test image over 105 training epochs.
 <br><br>
 <b>Key takeaways:</b><br>
 <ul>
