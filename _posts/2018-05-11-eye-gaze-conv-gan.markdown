@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Convolutional Generative Adversarial Network: "Eye Gaze" Image Generator"
+title:  "Convolutional Generative Adversarial Network: Eye Gaze Image Generator"
 date:   2018-05-11 02:40:08 +0000
 categories: machine learning, gan
 ---
