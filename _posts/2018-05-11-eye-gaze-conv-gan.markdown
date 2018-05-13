@@ -120,12 +120,8 @@ Key takeaways:<br>
     <li>Setting the Adam optimization beta 1 hyperparamter to 0.5 produced better convergence than the default value of 0.9.
     <li>The generator needs to be trained more often and requires a significantly smaler learning rate compared to the discriminator. My
   suspicion is that this is because my generator and discriminator have equally deep architectures. This gives the discriminator the
-  advantage since it has significantly less outputs to learn.</li>
-</ul>
+  advantage since it has significantly less outputs to learn.</li></ul>
 <br>
 Results:<br>
-The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.
-        </p>
-        <img src="/assets/gifs/eye_gan_generator2.gif">
-    </body>
-</html>
+The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p>
+        <img src="/assets/gifs/eye_gan_generator2.gif"></body></html>
