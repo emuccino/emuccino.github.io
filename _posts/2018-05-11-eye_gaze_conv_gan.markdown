@@ -12,7 +12,8 @@ jsarr:
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click [here](https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code") to access the kernel.
     
 Model architecture:
-
+<html>
+<body>
 Generator:
 _________________________________________________________________
 Layer                        Output Shape              Param #   
@@ -111,7 +112,8 @@ Total params: 1,645,250
 Trainable params: 1,208,513
 Non-trainable params: 436,737
 _________________________________________________________________
-
+</body>
+</html>
 Key takeaways:
 - Batch normalization is necassary of convergence.
 - In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets. 
@@ -124,15 +126,4 @@ Results:
 The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.
 <html>
 <img src="/assets/gifs/eye_gan_generator2.gif">
-    <p>Enter a sentimentally charged line of English text in the textbox to have it classified.</p>
-        <div>
-            <p>
-            Text: <input type="text" id="input" rows="3" cols="80"/></p>
-            <input type="submit" value="Submit" id="submit"/>
-        </div>
-        <div id="elements">
-            <div class="bar"><b>Good  </b><div class="meter"><span style="width: 50%" class="good"></span></div></div>
-            <div class="bar"><b>Bad  </b><div class="meter"><span style="width: 50%" class="bad"></span></div></div>
-        </div>
-        <div><p id = "result"></p></div>
 </html>
