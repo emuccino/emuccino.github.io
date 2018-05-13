@@ -32,5 +32,5 @@ permalink: /about/
     </li>
 </ul>
 </div>
-<div><img src="assets/images/profile_pic.jpg"></div>
+<div><img src="/assets/images/profile_pic.jpg"></div>
 </html>
