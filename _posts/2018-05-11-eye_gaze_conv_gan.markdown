@@ -129,8 +129,8 @@ jsarr:
       advantage since it has significantly less outputs to learn.
       
     Results:
-    The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five
-    times and the discriminator once per batch.
+    The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.
+    <img src="/assets/gifs/eye_gan_generator2.gif">
 
     </p>
     <p>Enter a sentimentally charged line of English text in the textbox to have it classified.</p>
