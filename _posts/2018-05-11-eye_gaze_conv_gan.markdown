@@ -113,9 +113,7 @@ Total params: 1,645,250
 Trainable params: 1,208,513
 Non-trainable params: 436,737
 _________________________________________________________________
-        </p>
-    </body>
-</html>
+
 Key takeaways:
 - Batch normalization is necassary of convergence.
 - In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets. 
@@ -126,6 +124,7 @@ Key takeaways:
 
 Results:
 The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.
-<html>
-<img src="/assets/gifs/eye_gan_generator2.gif">
+        </p>
+        <img src="/assets/gifs/eye_gan_generator2.gif">
+    </body>
 </html>
