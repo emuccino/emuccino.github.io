@@ -15,6 +15,7 @@ categories: machine learning, gan
 <b>Results:</b><br>
 The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.<br><br>
 <img src="/assets/gifs/eye_gan_generator2.gif">
+<br>Evolution of generated test image over 105 training epochs.
 <br><br><br>
 <b>Key takeaways:</b><br>
 <ul>
