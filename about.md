@@ -4,6 +4,7 @@ title: About
 permalink: /about/
 ---
 <html>
+    <div>
     <div style="display:inline-block; width:60%;">
 <p>My name is Eric Muccino, and I am a 22 year old studying 'Data Science'. I graduated from the University of Maryland in 2017 with a degree in Physics. Go Terps!</p>
 
@@ -33,4 +34,5 @@ permalink: /about/
 </ul>
 </div>
 <div style="display:inline-block; width:35%; margin-left:5%;"><img src="/assets/images/profile_pic.jpg"></div>
+</div>
 </html>
