@@ -116,8 +116,8 @@ _________________________________________________________________</pre>
 Key takeaways:<br>
 <ul>
     <li>Batch normalization is necassary of convergence.</li>
-    <li>In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets. </li>
-    <li>Setting the Adam optimization beta 1 hyperparamter to 0.5 produced better convergence than the default value of 0.9.
+    <li>In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets.</li>
+    <li>Setting the Adam optimization beta 1 hyperparamter to 0.5 produced better convergence than the default value of 0.9.</li>
     <li>The generator needs to be trained more often and requires a significantly smaler learning rate compared to the discriminator. My
   suspicion is that this is because my generator and discriminator have equally deep architectures. This gives the discriminator the
   advantage since it has significantly less outputs to learn.</li></ul>
