@@ -15,7 +15,7 @@ categories: machine learning, gan
 <b>Results:</b><br>
 The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p><br>
 <p style="text-align:center"><img src="/assets/gifs/eye_gan_generator2.gif"><br>Evolution of generated test image over 105 training epochs.</p>
-<br>
+</p><br>
 <b>Key takeaways:</b><br>
 <ul>
     <li>Batch normalization is necassary of convergence.</li>
@@ -123,5 +123,6 @@ discriminator (Model)        (None, 1)                 435777
 =================================================================
 Total params: 1,645,250
 Trainable params: 1,208,513
-Non-trainable params: 436,737</pre></p>
+Non-trainable params: 436,737</pre>
+</p>
         </body></html>
