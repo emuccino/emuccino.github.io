@@ -3,9 +3,8 @@ layout: post
 title:  "Convolutional Generative Adversarial Network: "Eye Gaze" Image Generator"
 date:   2018-05-11 02:40:08 +0000
 categories: machine learning, gan
-jsarr:
-- _js/jquery-1.10.1.min.js
 ---
+
 <html>
     <body>
         <p>
