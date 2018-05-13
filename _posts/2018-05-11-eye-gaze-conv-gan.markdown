@@ -15,7 +15,7 @@ categories: machine learning, gan
 Model architecture:<br>
 <br>
 Generator:<br>
-_________________________________________________________________<br>
+<pre>_________________________________________________________________<br>
 Layer                        Output Shape              Param #   <br>
 =================================================================<br>
 Input Layer                  (None, 64)                0         <br>
@@ -111,7 +111,7 @@ discriminator (Model)        (None, 1)                 435777    <br>
 Total params: 1,645,250<br>
 Trainable params: 1,208,513<br>
 Non-trainable params: 436,737<br>
-_________________________________________________________________<br>
+_________________________________________________________________<br></pre>
 <br>
 Key takeaways:<br>
 - Batch normalization is necassary of convergence.
