@@ -12,11 +12,11 @@ categories: machine learning, gan
         <p>    
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.<br>
 <br>
-Results:<br>
-The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.<br>
+<b>Results:</b><br>
+The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.<br><br>
 <img src="/assets/gifs/eye_gan_generator2.gif">
 <br><br><br>
-Key takeaways:<br>
+<b>Key takeaways:</b><br>
 <ul>
     <li>Batch normalization is necassary of convergence.</li>
     <li>In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets.</li>
@@ -25,7 +25,7 @@ Key takeaways:<br>
   suspicion is that this is because my generator and discriminator have equally deep architectures. This gives the discriminator the
   advantage since it has significantly less outputs to learn.</li></ul>
 <br> 
-Model architecture:<br>
+<b>Model architecture:</b><br>
 <pre>
 Generator:
 _________________________________________________________________
@@ -123,6 +123,5 @@ discriminator (Model)        (None, 1)                 435777
 =================================================================
 Total params: 1,645,250
 Trainable params: 1,208,513
-Non-trainable params: 436,737
-_________________________________________________________________</pre></p>
+Non-trainable params: 436,737</pre></p>
         </body></html>
