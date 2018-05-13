@@ -9,7 +9,8 @@ jsarr:
 <html>
     <body>
         <p>
-    A generative adversarial network (GAN) is a system composed of two neural networks: a generator and a discriminator. The discriminator takes a data instance as input, and classifies it as 'Real' or 'Fake' with respect to a training data set. The generator takes gaussian noise and transforms it into a a fake data instance with the goal of fooling the discriminator. The discriminator learns from errors when training on inputs from a data set and inputs created by the generater. The generater learns from errors in failed attempts at fooling the discriminator.
+    A generative adversarial network (GAN) is a system composed of two neural networks: a generator and a discriminator. The discriminator takes a data instance as input, and classifies it as 'Real' or 'Fake' with respect to a training data set. The generator takes gaussian noise and transforms it into a a fake data instance with the goal of fooling the discriminator. The discriminator learns from errors when training on inputs from a data set and inputs created by the generater. The generater learns from errors in failed attempts at fooling the discriminator.</p>
+        <p>    
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.
     
 Model architecture:
