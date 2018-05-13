@@ -13,7 +13,7 @@ jsarr:
     
 Model architecture:
 <html>
-<body>
+<body><p>
 Generator:
 _________________________________________________________________
 Layer                        Output Shape              Param #   
@@ -112,7 +112,7 @@ Total params: 1,645,250
 Trainable params: 1,208,513
 Non-trainable params: 436,737
 _________________________________________________________________
-</body>
+</p></body>
 </html>
 Key takeaways:
 - Batch normalization is necassary of convergence.
