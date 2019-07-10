@@ -8,22 +8,20 @@ categories: machine learning, gan
 <html>
     <body>
         <p>
-    A generative adversarial network (GAN) is a system composed of two neural networks: a generator and a discriminator. The discriminator takes a data instance as input, and classifies it as 'Real' or 'Fake' with respect to a training data set. The generator takes gaussian noise and transforms it into a a fake data instance with the goal of fooling the discriminator. The discriminator learns from errors when training on inputs from a data set and inputs created by the generater. The generater learns from errors in failed attempts at fooling the discriminator.</p>
+    A generative adversarial network (GAN) is a system composed of two neural networks: a generator and a discriminator. The discriminator takes a data instance as input, and classifies it as 'Real' or 'Fake' with respect to a training data set. The generator takes gaussian noise and transforms it into a a fake data instance with the goal of fooling the discriminator. The discriminator learns from errors while training on inputs from a data set and inputs created by the generater. The generator learns from errors in failed attempts at fooling the discriminator.</p>
         <p>    
     In an attempt to better understand the mechanics of generative adversarial networks, I developed a GAN model in Keras that uses convolutional neural networks to generate and discriminate images of human eyes with size 35 by 55 pixels. The project can be viewed     on Kaggle. Click <a href="https://www.kaggle.com/emuccino/eyegaze-convolutional-gan/code">here</a> to access the kernel.<br>
 <br>
 <b>Results:</b><br>
-The model had the best results with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p><br>
+The model performed best with a generator learning rate of 0.00005 and discriminator learning rate of 0.02, training the generator five times and the discriminator once per batch.</p><br>
 <p style="text-align:center"><img src="/assets/gifs/eye_gan_generator2.gif"><br>Evolution of generated test image over 105 training epochs.</p>
 <p><br>
 <b>Key takeaways:</b><br>
 <ul>
     <li>Batch normalization is necassary of convergence.</li>
     <li>In order for batch normalization to behave properly, the discriminator needs to use seperate batches for the real and fake data sets.</li>
-    <li>Setting the Adam optimization beta 1 hyperparamter to 0.5 produced better convergence than the default value of 0.9.</li>
-    <li>The generator needs to be trained more often and requires a significantly smaler learning rate compared to the discriminator. My
-  suspicion is that this is because my generator and discriminator have equally deep architectures. This gives the discriminator the
-  advantage since it has significantly less outputs to learn.</li></ul>
+    <li>Setting the Adam optimizer beta 1 hyperparamter to 0.5 produced better convergence than the default value of 0.9.</li>
+    <li>The generator needs to be trained more often and requires a significantly smaller learning rate compared to the discriminator. My suspicion is that this is because I used a generator and discriminator with equally deep architectures. This gives the discriminator the advantage since it has significantly less outputs to learn.</li></ul>
 <br> 
 <b>Model architecture:</b><br>
 <pre>
