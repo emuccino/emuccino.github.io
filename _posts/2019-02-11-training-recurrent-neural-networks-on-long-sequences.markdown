@@ -35,7 +35,6 @@ categories: machine learning, lstm, recurrent nerual network
     <br>
     <center>Stochastic Gradient Descent, Learning Rate = 0.01</center>
     <br>
-    <br>
     Lets see how we can improve training. We will explore three areas: Optimizers, Gradient Clipping, and Batch Sequence Length.</p>
 <h1>Optimizers</h1>
 <p>Two commonly used variations of Stochastic Gradient Descent (SGD) are RMSprop and Adam. While SGD makes weight and bias updates independently, RMSprop makes its updates based upon the root mean square of the differentials of weights and biases, allowing a straighter trajectory towards the optimal loss value. The Adam optimizer works similar to RMSprop but includes a moving average of the second order moment of gradients for an adaptive learning rate.
