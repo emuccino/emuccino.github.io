@@ -19,12 +19,14 @@ categories: machine learning, reinforcement learning
 <h1>Results</h1>
       <p>First, we examine simulation profit for each model using training data.</p>
     <img src="/assets/images/post7_fig1.png" style="display:block;margin-left:auto;margin-right: auto;width:auto;">
-    <center>Input Window Size: Dark Blue=1, Pink=4, Green=8, Red=16, Light Blue=32</center>        
+    <center>Input Window Size: Dark Blue=1, Pink=4, Green=8, Red=16, Light Blue=32</center>
+        <br>
 <p>We see that the larger our input window is, the better the model performs. This is not surprising since more inputs provides the model with more unique input signatures, making the mapping of inputs to outputs of the training data an easier task. A input window of 1 can barely learn a profitable value function because the noise within the data is too substantial. However, providing our model with an input window of 32 allows us to effortlessly learn an accurate value function.</p>
 <h1>Test Data Results (Profit v Epoch)</h1>
 <p>Let’s examine the performance of each model over the test data.</p>
     <img src="/assets/images/post7_fig2.png" style="display:block;margin-left:auto;margin-right: auto;width:auto;">
-    <center>Input Window Size: Dark Blue=1, Pink=4, Green=8, Red=16, Light Blue=32</center>        
+    <center>Input Window Size: Dark Blue=1, Pink=4, Green=8, Red=16, Light Blue=32</center>
+        <br>
 <p>Unsurprisingly, a window of size 1 does not produce a profit. As we increase the window size to 4 and 8, our model is able to learn a value function that profits over the test data. However, further increasing the window size to 16 causes a decline in performance. A window size 32 is not capable of profiting at all. For this particular combination of data and neural network model, an input window size of 8 has the best performance on our validation data out of the 5 window sizes that were tested.</p>
 <h1>Conclusion and Future Work</h1>
 <p>In this post, we have explored the effects of increasing the time-series input window to help manage the impact of noisy data on RNN memory states in the Deep Recurrent Reinforcement Learning setting. An experiment has shown that increasing the input window can benefit model performance. A window that is too large, however, can potentially lead to over-fitting, degrading model performance.</p>
