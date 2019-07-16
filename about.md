@@ -6,9 +6,26 @@ permalink: /about/
 <html>
     <div style="display: inline-flex">
     <div style="display:inline-block; width:60%;">
-<p>My name is Eric Muccino, and I am a 22 year old studying 'Data Science'. I graduated from the University of Maryland in 2017 with a degree in Physics. Go Terps!</p>
+<p>Eric Mucicno is a data scientist with a focus in machine learning engineering and research with 2
+years of experience in artificial intelligence development. From academic research to real-world
+solutions, Eric regularly utilizes novel approaches that incorporate AI techniques and statistical
+computing. With his background in physics and materials science research at the University of Maryland, he has established
+rigorous research methods that he employs in all of his pursuits. Eric’s AI-focused research topic
+areas have included:<p>
+<ul>
+    <li>Generative modeling for data extrapolation</li>
+<li>Long-term memory retention for temporal based AI systems</li>
+    <li>Non-stationary environment traversal for reinforcement learning systems</li>
+        </ul>
+        <p>He has lead teams on full life cycle projects, including roles in diverse product and research
+initiatives such as:<p>
+<ul>
+    <li>AI autonomous financial trading</li>
+<li>Web-based content filtering</li>
+    </ul>
+    
 
-<p>This blog is an attempt to document some of my progress while I teach myself computer programming and data science. Some of the langauges and API's I've been studying include:</p>
+<p>This blog is an attempt to document some of my progress while Eric learns computer programming and data science. Some of the langauges and libraries Eric has been utilizing include:</p>
 <ul>
     <li>
       Python
@@ -23,7 +40,7 @@ permalink: /about/
       JavaScript
     </li>
     <li>
-      SQLite
+      SQL
     </li>
     <li>
       Tensorflow/Keras
