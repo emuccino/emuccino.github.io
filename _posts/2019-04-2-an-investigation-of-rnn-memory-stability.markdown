@@ -2,7 +2,7 @@
 layout: post
 title:  "An Investigation of RNN Memory Stability"
 date:   2019-04-2 7:22:23 +0000
-categories: machine learning, reinforcement learning
+categories: machine learning, recurrent neural network, lstm, gru
 ---
 
 <html>
