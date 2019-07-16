@@ -2,7 +2,7 @@
 layout: post
 title:  "Input Window Size for Deep Recurrent Reinforcement Learning"
 date:   2019-02-26 09:01:56 +0000
-categories: machine learning, reinforcement learning
+categories: machine learning, recurrent nerual network, lstm, gru
 ---
 
 <html>
