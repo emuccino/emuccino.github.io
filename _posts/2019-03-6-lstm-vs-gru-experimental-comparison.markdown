@@ -2,7 +2,7 @@
 layout: post
 title:  "LSTM vs GRU: Experimental Comparison"
 date:   2019-03-6 11:36:12 +0000
-categories: machine learning, reinforcement learning
+categories: machine learning, recurrent nerual network, lstm, gru
 ---
 
 <html>
